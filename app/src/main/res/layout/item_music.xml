@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    card_view:cardCornerRadius="12dp"
+    card_view:cardElevation="2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/img_item_photo"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:contentDescription="Album"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_item_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Judul Lagu"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#222"
+            android:maxLines="1"
+            android:ellipsize="end"
+            app:layout_constraintStart_toEndOf="@id/img_item_photo"
+            app:layout_constraintTop_toTopOf="@id/img_item_photo"
+            app:layout_constraintEnd_toStartOf="@id/btn_audio"
+            android:layout_marginStart="12dp" />
+
+        <TextView
+            android:id="@+id/txt_item_deskripsi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Deskripsi lagu"
+            android:textSize="14sp"
+            android:textColor="#555"
+            android:maxLines="2"
+            android:ellipsize="end"
+            app:layout_constraintStart_toStartOf="@id/txt_item_name"
+            app:layout_constraintTop_toBottomOf="@id/txt_item_name"
+            app:layout_constraintEnd_toEndOf="@id/txt_item_name"
+            app:layout_constraintBottom_toBottomOf="@id/img_item_photo" />
+
+        <ImageView
+            android:id="@+id/btn_audio"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_audio"
+            android:contentDescription="Putar Audio"
+            app:layout_constraintEnd_toStartOf="@id/btn_video"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="8dp"/>
+
+        <ImageView
+            android:id="@+id/btn_video"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_video"
+            android:contentDescription="Putar Video"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

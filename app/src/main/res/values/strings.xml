@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyApps</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="nama">Genta Buana</string>
+    <string name="nim">10119369</string>
+    <string name="email">gentabuana99@gmail.com</string>
+    <string name="bandung">Bandung, Indonesia</string>
+    <string name="tentang">Tentang Aplikasi</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about">Aplikasi ini dibuat untuk tugas UTS Komputasi Bergerak. Berisi fitur-fitur pribadi seperti aktivitas harian, galeri, multimedia, dan lainnya.</string>
+</resources>

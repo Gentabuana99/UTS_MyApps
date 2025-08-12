@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#EAF6FF"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp"
+        android:minHeight="500dp"
+        android:background="@drawable/music_bg_card"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:paddingBottom="48dp">
+
+        <TextView
+            android:text="🎵 Halaman Musik dan Video"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#1D3557"
+            android:padding="11dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMusic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center_horizontal"
+            tools:listitem="@layout/item_music" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📺 Video Player"
+            android:textSize="16sp"
+            android:layout_margin="18dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="#1D3557"
+            android:layout_marginBottom="8dp" />
+
+        <VideoView
+            android:layout_margin="14dp"
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HENTIKAN"
+            android:textStyle="bold"
+            android:backgroundTint="#e63946"
+            android:textColor="#fff"
+            android:layout_marginBottom="12dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+
+    </LinearLayout>
+</ScrollView>
